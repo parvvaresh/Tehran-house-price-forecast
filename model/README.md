@@ -143,6 +143,4 @@ pip install arabic_reshaper python-bidi
 
 ---
 
-## License
 
-Include your license information here (for example, MIT License).
