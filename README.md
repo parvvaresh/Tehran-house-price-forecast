@@ -10,6 +10,7 @@ This repository contains a web application for predicting house prices in Tehran
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [File Descriptions](#file-descriptions)
+- [Overview app](#Overview-app)
 - [License](#license)
 
 ## Overview
@@ -22,7 +23,7 @@ A [Google Colab version of the notebook](https://colab.research.google.com/drive
 
 - **User-Friendly Web Interface:** Allows users to enter property details through a simple HTML form.
 - **Input Validation:** Validates inputs such as area (20–500 m²) and construction year (1320–1403).
-- **Model Prediction:** Uses a saved Linear Regression model to generate price predictions.
+- **Model Prediction:** Uses a saved Random Forest model to generate price predictions.
 - **Result Display:** Predicted prices are formatted using a custom currency filter.
 - **Error Handling:** Displays appropriate error messages for invalid input or system issues.
 
@@ -31,7 +32,7 @@ A [Google Colab version of the notebook](https://colab.research.google.com/drive
 ```
 ├── app.py                      # Flask application file for running the web app.
 ├── model
-│   ├── best_linear_model.pkl   # Pickled trained Linear Regression model.
+│   ├── best_model.pkl   # Pickled trained Random Forest model.
 │   ├── README.md               # README specific to the model folder.
 │   └── scaler.pkl              # Pickled StandardScaler used for model input normalization.
 ├── __pycache__
@@ -106,3 +107,8 @@ A [Google Colab version of the notebook](https://colab.research.google.com/drive
   - **script.js:** JavaScript code for any dynamic functionality.
   - **icon.jpg:** Icon or image used in the application.
 
+## Overview app
+![form page](assets/index.png)
+
+
+![result](assets/predict.png)
