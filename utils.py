@@ -7,16 +7,16 @@ def load_model_and_predict(input_data):
     """
     try:
         # Load the trained model
-        with open('model/best_linear_model.pkl', 'rb') as file:
+        with open('model/best_model.pkl', 'rb') as file:
             model = pickle.load(file)
 
 
         # Load the scaler model
-        # with open('model/scaler.pkl', 'rb') as f:
-        #     scaler = pickle.load(f)
+        with open('model/scaler.pkl', 'rb') as f:
+            scaler = pickle.load(f)
 
         # Use the loaded scaler
-        # input_data = scaler.transform(input_data)
+        input_data = scaler.transform(input_data)
 
             
 
